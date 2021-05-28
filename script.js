@@ -143,6 +143,7 @@ const curTheme = localStorage.getItem(`theme`);
 
 // Switch theme function
 const switchTheme = (val) => {
+  if (!val) return;
   // Sets the sliders `value` property to val thats passed in
   slider.setAttribute(`value`, val);
   // Checks if the last childs prev sibling in head is `main-css`
